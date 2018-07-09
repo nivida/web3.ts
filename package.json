@@ -1,0 +1,26 @@
+{
+  "name": "web3.ts",
+  "version": "0.0.1",
+  "description": "Web3 implementation in typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nivida/web3.ts.git"
+  },
+  "keywords": [
+    "Web3",
+    "javscript",
+    "ethereum",
+    "js",
+    "api"
+  ],
+  "author": "Samuel Furter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nivida/web3.ts/issues"
+  },
+  "homepage": "https://github.com/nivida/web3.ts#readme"
+}
