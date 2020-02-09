@@ -171,18 +171,16 @@ export default class Hex {
     }
 
     /**
-     * TODO: improve type
-     *
      * Auto converts any given value into it's hex representation.
      * And even stringifys objects before.
      *
      * @method toHex
      *
-     * @param {String|Number|BN|Object} value
+     * @param {String | Number | BN | Object | BigNumber} value
      *
      * @returns {Hex}
      */
-    static from(value: string | number | BN | object | BigNumber): Hex {
+    static from(value: BN | BigNumber | string | number ): Hex {
         if (isBoolean(value)) {
             if (value === true) {
                 return new Hex('0x01');
