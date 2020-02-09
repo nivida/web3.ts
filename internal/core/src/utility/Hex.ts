@@ -222,22 +222,11 @@ export default class Hex {
                 hex = value.toString(16);
             }
 
-
-            if (hex.startsWith('-')) {
-                return new Hex('-0x' + hex.slice(1));
-            }
-
-            return new Hex('0x' + hex);
+            return new Hex(hex);
         }
 
         if (BN.isBN(value)) {
-            const hex = value.toString(16);
-
-            if (hex.startsWith('-')) {
-                return new Hex('-0x' + hex.slice(1));
-            }
-
-            return new Hex('0x' + hex);
+            return new Hex(value.toString(16));
         }
 
         return Hex.fromNumber(value);
