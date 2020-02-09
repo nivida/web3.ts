@@ -5,20 +5,20 @@
  */
 
 import BN from 'bn.js';
-import {isBoolean, isObject, isString, isNumber} from 'lodash';
 import randombytes from 'randombytes';
+import {isBoolean, isObject, isString, isNumber} from 'lodash';
 import {BigNumber} from '@ethersproject/bignumber';
 import {toUtf8Bytes, toUtf8String, UnicodeNormalizationForm} from '@ethersproject/strings';
 import {hexlify, arrayify, BytesLike} from '@ethersproject/bytes';
 
 export default class Hex {
     /**
-     * @property sign
+     * @property {string} sign
      */
     private sign: string;
 
     /**
-     * @property value
+     * @property {string} value
      */
     private value: string;
 
@@ -127,7 +127,7 @@ export default class Hex {
      * @returns {String}
      */
     toUTF8(): string {
-        return toUtf8String(this.toBytes(this.toString()))
+        return toUtf8String(arrayify(this.toString()))
     }
 
     /**
