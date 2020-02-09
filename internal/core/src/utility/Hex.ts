@@ -171,6 +171,8 @@ export default class Hex {
     }
 
     /**
+     * TODO: improve type
+     * 
      * Auto converts any given value into it's hex representation.
      * And even stringifys objects before.
      *
@@ -180,7 +182,7 @@ export default class Hex {
      *
      * @returns {Hex}
      */
-    static from(value: string | number | BN | object): Hex {
+    static from(value: string | number | BN | object | BigNumber): Hex {
         if (isBoolean(value)) {
             if (value === true) {
                 return new Hex('0x01');
@@ -203,23 +205,29 @@ export default class Hex {
                 return new Hex(value);
             }
 
+            // @ts-ignore
             if (!isFinite(value)) {
                 return Hex.fromUTF8(value);
             }
         }
 
         if (BigNumber.isBigNumber(value)) {
-            let hex = <BN> value.toString(16);
+            let hex = '';
 
+            // Ethers BigNumber
             if (value.toHexString) {
                 hex = value.toHexString();
+            } else { // Normal BigNumber.js object
+                // @ts-ignore
+                hex = value.toString(16);
             }
+
 
             if (hex.startsWith('-')) {
                 return new Hex('-0x' + hex.slice(1));
             }
 
-            return new Hex('0x' + value.toString(16));
+            return new Hex('0x' + hex);
         }
 
         if (BN.isBN(value)) {
