@@ -1,0 +1,33 @@
+
+/**
+ * @file GetProtocolVersionMethod.js
+ * @author Samuel Furter <samuel@ethereum.org>
+ * @date 2019
+ */
+
+import Method from "../../../../core/src/json-rpc/methods/Method";
+import Hex from "../../../../core/src/utility/Hex";
+
+export default class GetProtocolVersionMethod extends Method {
+    /**
+     * @param {EthereumConfiguration} config
+     *
+     * @constructor
+     */
+    constructor(config) {
+        super('eth_protocolVersion', 0, config, []);
+    }
+
+    /**
+     * This method will be executed after the RPC request.
+     *
+     * @method afterExecution
+     *
+     * @param {String} response
+     *
+     * @returns {Promise<Number>}
+     */
+    async afterExecution(response) {
+        return new Hex(response).toNumber();
+    }
+}

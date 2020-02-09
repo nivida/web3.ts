@@ -1,2 +1,4 @@
-# web3-ts
-An implementation of web3 in typescript
+
+# web3.ts
+
+Provides all a developers needs to write a DApp with Ethereum, IPFS, and more.

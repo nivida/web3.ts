@@ -1,31 +1,78 @@
 {
-  "name": "web3.ts",
-  "version": "0.0.1",
-  "description": "Web3 implementation in typescript",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "watch": "tsc -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/nivida/web3.ts.git"
-  },
-  "keywords": [
-    "Web3",
-    "javscript",
-    "ethereum",
-    "js",
-    "api"
-  ],
-  "author": "Samuel Furter",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/nivida/web3.ts/issues"
-  },
-  "homepage": "https://github.com/nivida/web3.ts#readme",
-  "devDependencies": {
-    "typescript": "^2.9.2"
-  }
+    "name": "web3.ts",
+    "namespace": "ethereum",
+    "version": "1.0.0-beta.0",
+    "description": "Ethereum JavaScript API",
+    "license": "MIT",
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "main": "./index.js",
+    "scripts": {
+        "setup:registry": "./scripts/dev/setup.registry.sh",
+        "start:registry": "./scripts/dev/start.registry.sh",
+        "stop:registry": "./scripts/dev/stop.registry.sh",
+        "build": "ttsc -p ./tsconfig.json",
+        "build:prod": "ttsc -p ./tsconfig.prod.json",
+        "publish:local": "./scripts/dev/publish.package.local.sh",
+        "publish:prepare": "./scripts/dev/prepare.package.sh",
+        "coverage": "ethereumjs-config-coverage",
+        "coveralls": "ethereumjs-config-coveralls",
+        "format": "ethereumjs-config-format",
+        "format-fix": "ethereumjs-config-format-fix",
+        "lint": "ethereumjs-config-lint",
+        "lint-fix": "ethereumjs-config-lint-fix",
+        "pretest": "npm run build",
+        "test": "jest",
+        "tsc": "ethereumjs-config-tsc",
+        "tslint": "ethereumjs-config-tslint",
+        "tslint:fix": "ethereumjs-config-tslint-fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nivida/web3.ts.git"
+    },
+    "homepage": "https://github.com/nivida/web3.ts",
+    "keywords": [
+        "Ethereum",
+        "JavaScript",
+        "API"
+    ],
+    "authors": [
+        {
+            "name": "Samuel Furter",
+            "email": "samuel@ethereum.org",
+            "homepage": "https://github.com/nivida"
+        }
+    ],
+    "devDependencies": {
+        "@ethereumjs/config-prettier": "^1.1.1",
+        "@ethereumjs/config-tsc": "^1.1.1",
+        "@ethereumjs/config-tslint": "^1.1.1",
+        "@types/bn.js": "^4.11.5",
+        "@types/lodash": "^4.14.149",
+        "@types/node": "^12.0.10",
+        "coveralls": "^3.0.3",
+        "forever": "^1.0.0",
+        "jest": "^24.8.0",
+        "npm-auth-to-token": "^1.0.0",
+        "prettier": "^1.15.3",
+        "tslint": "^5.20.1",
+        "ttypescript": "^1.5.8",
+        "typescript": "^3.7.3",
+        "typescript-transform-paths": "^1.1.13",
+        "verdaccio": "^4.4.0"
+    },
+    "dependencies": {
+        "@ethersproject/bignumber": "^5.0.0-beta.135",
+        "@web3-js/websocket": "^1.0.30",
+        "bn.js": "^5.0.0",
+        "eth-lib": "^0.1.29",
+        "eventemitter3": "^4.0.0",
+        "lodash": "^4.17.15",
+        "randombytes": "^2.1.0",
+        "rxjs": "7.0.0-alpha.0",
+        "utf8": "^3.0.0",
+        "xhr2-cookies": "^1.1.0"
+    }
 }
