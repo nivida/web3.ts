@@ -13,7 +13,7 @@ sh ./scripts/dev/prepare.package.sh
 cd ./package/
 
 # Unpublish the local web3 package
-npm unpublish web3@$(node -p "require('./package.json').version") --registry=http://localhost:4873
+npm unpublish web3.ts@$(node -p "require('./package.json').version") --registry=http://localhost:4873
 
 # Publish package to local verdaccio registry
 npm publish --registry=http://localhost:4873
