@@ -10,6 +10,7 @@ Provides all a developers needs to write a DApp with Ethereum, IPFS, and more.
 ``` typescript
 import {web3, send, receipt, WebsocketProvider, Transaction} from 'web3.ts';
 
+// Call it in your root index.js or pass the config always to the related function
 web3.init(
   'myApp',
   {
