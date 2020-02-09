@@ -12,8 +12,8 @@ import PollingSubscription from "internal/core/src/json-rpc/subscriptions/pollin
 import send from "./send";
 import confirmations from "./confirmations";
 import receipt from "./receipt";
-import getConfig from "../../config/getConfig";
-import ConfigurationTypes from "../../config/ConfigurationTypes";
+import getConfig from "../../core/config/getConfig";
+import ConfigurationTypes from "../../core/config/ConfigurationTypes";
 
 export default class Transaction {
     /**

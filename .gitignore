@@ -3,4 +3,4 @@ dist/
 lerna-debug.log
 node_modules
 .idea
-
+package/

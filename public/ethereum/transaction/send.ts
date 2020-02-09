@@ -9,8 +9,8 @@ import EstimateGasMethod from "internal/ethereum/src/methods/eth/EstimateGasMeth
 import SendTransactionMethod from "internal/ethereum/src/methods/eth/transaction/SendTransactionMethod";
 import TransactionOptionsProperties from "internal/ethereum/lib/types/input/interfaces/TransactionOptionsProperties";
 import EthereumConfiguration from 'internal/ethereum/src/config/EthereumConfiguration.js';
-import ConfigurationTypes from "../../config/ConfigurationTypes";
-import getConfig from "../../config/getConfig";
+import getConfig from "../../core/config/getConfig";
+import ConfigurationTypes from "../../core/config/ConfigurationTypes";
 
 /**
  * Returns the transaction hash and pre-fills missing properties if possible.

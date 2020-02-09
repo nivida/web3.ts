@@ -4,8 +4,8 @@
  * @date 2020
  */
 
-import BN from 'bn.js';
-import randombytes from 'randombytes';
+const BN = require('bn.js');
+const randombytes = require('randombytes');
 import {isBoolean, isObject, isString, isNumber} from 'lodash';
 import {BigNumber} from '@ethersproject/bignumber';
 import {toUtf8Bytes, toUtf8String, UnicodeNormalizationForm} from '@ethersproject/strings';
@@ -153,7 +153,7 @@ export default class Hex {
      *
      * @returns {Hex}
      */
-    static fromNumber(value: string): Hex {
+    static fromNumber(value: number): Hex {
         return new Hex(hexlify(value));
     }
 
@@ -180,7 +180,7 @@ export default class Hex {
      *
      * @returns {Hex}
      */
-    static from(value: BN | BigNumber | string | number): Hex {
+    static from(value: object | string | number): Hex {
         if (isBoolean(value)) {
             if (value === true) {
                 return new Hex('0x01');
@@ -224,7 +224,7 @@ export default class Hex {
             return new Hex(value.toString(16));
         }
 
-        return Hex.fromNumber(value);
+        return Hex.fromNumber(value as number);
     }
 
     /**
