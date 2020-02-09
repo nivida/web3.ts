@@ -172,7 +172,7 @@ export default class Hex {
 
     /**
      * TODO: improve type
-     * 
+     *
      * Auto converts any given value into it's hex representation.
      * And even stringifys objects before.
      *
@@ -237,7 +237,7 @@ export default class Hex {
                 return new Hex('-0x' + hex.slice(1));
             }
 
-            return new Hex('0x' + value.toString(16));
+            return new Hex('0x' + hex);
         }
 
         return Hex.fromNumber(value);
