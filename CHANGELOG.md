@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- EXAMPLE
 
-## [2.0.0-alpha]
+## [1.0.0-alpha]
 
 ### Added
 
