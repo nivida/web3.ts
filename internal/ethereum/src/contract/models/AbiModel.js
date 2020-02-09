@@ -1,8 +1,7 @@
-
 /**
  * @file AbiModel.js
- * @author Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @author Samuel Furter
+ * @date 2020
  */
 
 export default class AbiModel {

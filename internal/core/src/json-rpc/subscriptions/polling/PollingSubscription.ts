@@ -1,8 +1,7 @@
-
 /**
- * @file PollingSubscription.js
- * @authors: Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @file PollingSubscription
+ * @authors: Samuel Furter
+ * @date 2020
  */
 
 import {Observable, interval, PartialObserver, Subscription, Subscriber} from 'rxjs';

@@ -1,8 +1,7 @@
-
 /**
- * @file PollingTransactionConfirmationSubscription
- * @author Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @file TransactionConfirmationSubscription
+ * @author Samuel Furter
+ * @date 2020
  */
 
 import {Subscriber, PartialObserver, Subscription} from "rxjs";

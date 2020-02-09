@@ -1,11 +1,7 @@
-
-
 /**
  * @file TransactionOptions.js
- * @author Samuel Furter <samuel@ethereum.org>
- * @author Fabian Vogelsteller <fabian@ethereum.org>
- * @author Marek Kotewicz <marek@parity.io>
- * @date 2019
+ * @author Samuel Furter
+ * @date 2020
  */
 
 import Address from './Address';

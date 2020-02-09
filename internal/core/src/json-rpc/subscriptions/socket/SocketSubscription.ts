@@ -1,8 +1,7 @@
-
 /**
- * @file SocketSubscription.js
- * @authors: Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @file SocketSubscription
+ * @authors: Samuel Furter
+ * @date 2020
  */
 
 import {Observable, Subscription, PartialObserver, Subscriber} from 'rxjs';

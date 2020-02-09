@@ -1,10 +1,10 @@
-
 /**
  * @file Iban.js
  *
  * Details: https://github.com/ethereum/wiki/wiki/ICAP:-Inter-exchange-Client-Address-Protocol
  *
  * @author Marek Kotewicz <marek@parity.io>
+ * @author Samuel Furter
  * @date 2015
  */
 

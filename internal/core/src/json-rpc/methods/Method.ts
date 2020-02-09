@@ -1,8 +1,7 @@
-
 /**
- * @file Method.js
- * @author Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @file Method
+ * @author Samuel Furter
+ * @date 2020
  */
 
 import JsonRpcConfiguration from "../config/JsonRpcConfiguration";

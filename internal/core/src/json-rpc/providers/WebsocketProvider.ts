@@ -1,11 +1,10 @@
-
 /**
- * @file WebsocketProvider.ts
- * @authors: Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @file WebsocketProvider
+ * @authors: Samuel Furter
+ * @date 2020
  */
 
-// TODO: Add types to websocket dependency or define those types here in this repo
+// TODO: Remove this dependency and create a W3C WebSocket object
 //@ts-ignore
 import {w3cwebsocket as Ws} from '@web3-js/websocket';
 import AbstractSocketProvider from "../../../lib/json-rpc/providers/AbstractSocketProvider";

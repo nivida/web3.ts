@@ -1,8 +1,7 @@
-
 /**
- * @file EthereumConfiguration.js
- * @author Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @file EthereumConfiguration
+ * @author Samuel Furter
+ * @date 2020
  */
 
 import JsonRpcConfiguration from "../../../core/src/json-rpc/config/JsonRpcConfiguration";

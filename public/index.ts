@@ -1,8 +1,7 @@
-
 /**
- * @file web3.js
- * @authors: Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @file web3.ts
+ * @authors: Samuel Furter
+ * @date 2020
  */
 
 import Configuration from "./core/config/Configuration";

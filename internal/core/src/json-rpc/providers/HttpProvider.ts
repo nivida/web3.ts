@@ -1,8 +1,7 @@
-
 /**
  * @file HttpProvider.js
- * @authors: Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @authors: Samuel Furter
+ * @date 2020
  */
 
 // TODO: Remove XHR dependency

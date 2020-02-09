@@ -1,8 +1,7 @@
-
 /**
  * @file JsonRpcConfiguration.ts
- * @author Samuel Furter <samuel@ethereum.org>
- * @date 2019
+ * @author Samuel Furter
+ * @date 2020
  */
 
 import AbstractProvider from "../../../lib/json-rpc/providers/AbstractProvider";

@@ -1,10 +1,7 @@
-
 /**
- * @file Hex.js
- * @author Samuel Furter <samuel@ethereum.org>
- * @author Fabian Vogelsteller <fabian@ethereum.org>
- * @author Marek Kotewicz <marek@parity.io>
- * @date 2019
+ * @file Hex
+ * @author Samuel Furter
+ * @date 2020
  */
 
 import utf8 from 'utf8';
