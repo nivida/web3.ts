@@ -1,5 +1,5 @@
 /**
- * @file Hex
+ * @file Hex.ts
  * @author Samuel Furter
  * @date 2020
  */
@@ -23,7 +23,7 @@ export default class Hex {
     private value: string;
 
     /**
-     * @param {String} value
+     * @param {string} value
      *
      * @constructor
      */
@@ -41,9 +41,9 @@ export default class Hex {
      *
      * @method getSign
      *
-     * @param {String} value
+     * @param {string} value
      *
-     * @returns {String}
+     * @returns {string}
      */
     getSign(value: string): string {
         if (value.startsWith('-')) {
@@ -58,7 +58,7 @@ export default class Hex {
      *
      * @method toString
      *
-     * @returns {String}
+     * @returns {string}
      */
     toString(): string {
         return this.sign + '0x' + this.value;
@@ -69,7 +69,7 @@ export default class Hex {
      *
      * @method toNumber
      *
-     * @returns {Number}
+     * @returns {number}
      */
     toNumber(): number {
         return this.toBigNumber().toNumber();
@@ -78,11 +78,11 @@ export default class Hex {
     /**
      * Returns the given hex string as string number.
      *
-     * @method toNumberString
+     * @method toNumberstring
      *
-     * @returns {String}
+     * @returns {string}
      */
-    toNumberString(): string {
+    toNumberstring(): string {
         return this.toBigNumber().toString();
     }
 
@@ -102,7 +102,7 @@ export default class Hex {
      *
      * @method toTwosComplement
      *
-     * @returns {String}
+     * @returns {string}
      */
     toTwosComplement(): string {
         return this.toBigNumber().toTwos(256).toHexString();
@@ -124,7 +124,7 @@ export default class Hex {
      *
      * @method toUTF8
      *
-     * @returns {String}
+     * @returns {string}
      */
     toUTF8(): string {
         return toUtf8String(arrayify(this.toString()))
@@ -135,8 +135,8 @@ export default class Hex {
      *
      * @method fromUTF8
      *
-     * @param {String} value
-     * @param {String} normalizationForm
+     * @param {string} value
+     * @param {string} normalizationForm
      *
      * @returns {Hex}
      */
@@ -149,7 +149,7 @@ export default class Hex {
      *
      * @method fromNumber
      *
-     * @param {Number} value
+     * @param {number} value
      *
      * @returns {Hex}
      */
@@ -162,7 +162,7 @@ export default class Hex {
      *
      * @method fromBytes
      *
-     * @param {Array<String>} bytes
+     * @param {Array<string>} bytes
      *
      * @returns {Hex}
      */
@@ -174,13 +174,13 @@ export default class Hex {
      * Auto converts any given value into it's hex representation.
      * And even stringifys objects before.
      *
-     * @method toHex
+     * @method from
      *
-     * @param {String | Number | BN | Object | BigNumber} value
+     * @param {BN | BigNumber | string | number} value
      *
      * @returns {Hex}
      */
-    static from(value: BN | BigNumber | string | number ): Hex {
+    static from(value: BN | BigNumber | string | number): Hex {
         if (isBoolean(value)) {
             if (value === true) {
                 return new Hex('0x01');
@@ -233,7 +233,7 @@ export default class Hex {
     /**
      * Validates the given hex.
      *
-     * @param {String} hex
+     * @param {string} hex
      *
      * @returns {Boolean}
      */
@@ -246,9 +246,9 @@ export default class Hex {
      *
      * @method stripPrefix
      *
-     * @param {String} value
+     * @param {string} value
      *
-     * @returns {String}
+     * @returns {string}
      */
     static stripPrefix(value: string): string {
         if (value.startsWith('0x') || value.startsWith('0X')) {
@@ -267,7 +267,7 @@ export default class Hex {
      *
      * @method random
      *
-     * @param {Number} size
+     * @param {number} size
      *
      * @returns {Hex}
      */
