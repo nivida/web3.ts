@@ -203,10 +203,7 @@ export default class Hex {
                 return new Hex(value);
             }
 
-            // @ts-ignore
-            if (!isFinite(value)) {
-                return Hex.fromUTF8(value);
-            }
+            return Hex.fromUTF8(value);
         }
 
         if (BigNumber.isBigNumber(value)) {
