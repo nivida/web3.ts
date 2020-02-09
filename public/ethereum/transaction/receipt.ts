@@ -7,8 +7,8 @@
 import confirmations from './confirmations';
 import EthereumConfiguration from "internal/ethereum/src/config/EthereumConfiguration";
 import TransactionReceipt from "internal/ethereum/lib/types/output/TransactionReceipt";
-import getConfig from "../../config/getConfig";
-import ConfigurationTypes from "../../config/ConfigurationTypes";
+import getConfig from "../../core/config/getConfig";
+import ConfigurationTypes from "../../core/config/ConfigurationTypes";
 
 /**
  * Returns the receipt if the amount of configured confirmations is reached.

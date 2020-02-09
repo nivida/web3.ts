@@ -1,7 +1,7 @@
 import ConfigurationTypes from "./ConfigurationTypes";
 import Configuration from "./Configuration";
 import EthereumConfiguration from "internal/ethereum/src/config/EthereumConfiguration";
-import web3 from "../index";
+import web3 from "../../index";
 
 const ConfigurationMap = {
     [ConfigurationTypes.ETHEREUM]: EthereumConfiguration

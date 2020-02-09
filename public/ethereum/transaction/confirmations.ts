@@ -12,8 +12,8 @@ import EthereumConfiguration from "internal/ethereum/src/config/EthereumConfigur
 import TransactionReceipt from "internal/ethereum/lib/types/output/TransactionReceipt";
 import SocketSubscription from "internal/core/src/json-rpc/subscriptions/socket/SocketSubscription";
 import PollingSubscription from "internal/core/src/json-rpc/subscriptions/polling/PollingSubscription";
-import getConfig from "../../config/getConfig";
-import ConfigurationTypes from "../../config/ConfigurationTypes";
+import getConfig from "../../core/config/getConfig";
+import ConfigurationTypes from "../../core/config/ConfigurationTypes";
 
 /**
  * Starts a newHeads subscription or polls for the transaction receipt and emits if a valid confirmation happened.
