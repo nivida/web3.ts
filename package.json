@@ -60,7 +60,7 @@
         "ttypescript": "^1.5.8",
         "typescript": "^3.7.3",
         "typescript-transform-paths": "^1.1.13",
-        "verdaccio": "^4.4.0"
+        "verdaccio": "^5.19.1"
     },
     "dependencies": {
         "@ethersproject/bignumber": "^5.0.0-beta.135",
